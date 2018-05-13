@@ -3,10 +3,8 @@ require 'pry'
 class Genre
 
   attr_accessor :name, :song, :artist
-  #attr_accessor :name, :patient, :date
 
   @@all = []
-  #@@all = []
 
   def initialize(name)
     @name = name
@@ -32,6 +30,5 @@ class Genre
       song.artist
     end
   end
-
 
 end
