@@ -20,7 +20,6 @@ class Patient
   end
 
   def doctors
-    binding.pry
     all.map do |appt|
       appt.doctor
     end
