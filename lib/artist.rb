@@ -28,7 +28,9 @@ class Artist
   end
 
   def genres
-    songs.map {|song| song.genre}
+    songs.map do |song|
+      song.genre
+    end
   end
   #def doctors
   #  appointments.map do |appt|
