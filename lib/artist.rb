@@ -3,10 +3,8 @@ require 'pry'
 class Artist
 
   attr_accessor :name, :song, :genre
-  #attr_accessor :doctor, :date, :name
 
   @@all = []
-  #@@all = []
 
   def initialize(name)
     @name = name
