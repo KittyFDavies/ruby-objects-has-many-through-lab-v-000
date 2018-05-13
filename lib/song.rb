@@ -18,7 +18,7 @@ class Song
   end
 
   def genre
-    
+    Genre.name == self.genre
   end
 
 end
