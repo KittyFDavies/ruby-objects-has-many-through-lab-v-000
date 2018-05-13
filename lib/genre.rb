@@ -3,16 +3,26 @@ require 'pry'
 class Genre
 
   attr_accessor :name, :song, :artist
+  #attr_accessor :name, :patient, :date
 
   @@all = []
+  #@@all = []
 
   def initialize(name)
     @name = name
     @@all << self
   end
+  #def initialize(name)
+    #@name = name
+    #@@all << self
+  #end
 
   def self.all
     @@all
+  end
+
+  def new_song(song, artist)
+    Song.new(song, self, artist)
   end
 
   def songs
@@ -26,5 +36,28 @@ class Genre
       song.artist
     end
   end
+
+
+  
+
+  
+
+
+  def new_appointment(patient, date)
+    Appointment.new(patient, self, date)
+  end
+
+  def appointments
+    Appointment.all.select do |appt|
+      appt.doctor == self
+    end
+  end
+
+  def patients
+    appointments.map do |appt|
+      appt.patient
+    end
+  end
+
 
 end
