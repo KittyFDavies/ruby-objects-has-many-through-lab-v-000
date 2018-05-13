@@ -32,10 +32,5 @@ class Artist
       song.genre
     end
   end
-  #def doctors
-  #  appointments.map do |appt|
-  #    appt.doctor
-  #  end
-  #end
 
 end
