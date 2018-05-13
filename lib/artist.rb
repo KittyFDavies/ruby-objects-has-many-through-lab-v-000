@@ -26,11 +26,6 @@ class Artist
       song.artist == self
     end
   end
-  #def appointments
-  #  Appointment.all.select do |appt|
-  #    appt.patient == self
-  #  end
-  #end
 
   def genres
     songs.map {|song| song.genre}
