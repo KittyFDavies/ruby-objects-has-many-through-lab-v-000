@@ -19,6 +19,12 @@ class Patient
     #binding.pry
   end
 
+  def appointments
+    Appointment.all.select do |appt|
+      appt.patient == self
+    end
+  end
+
   def doctors
     all.map do |appt|
       appt.doctor
