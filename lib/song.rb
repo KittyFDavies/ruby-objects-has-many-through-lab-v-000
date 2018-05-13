@@ -18,7 +18,7 @@ class Song
   end
 
   def genre
-    binding.pry
+    #binding.pry
     Genre.name == self.genre
   end
 
