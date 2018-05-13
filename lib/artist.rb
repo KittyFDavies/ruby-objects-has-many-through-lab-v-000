@@ -20,9 +20,6 @@ class Artist
   def new_song(song, genre)
     Song.new(song, genre, self)
   end
-  #def new_appointment(doctor, date)
-  #  Appointment.new(self, doctor, date)
-  #end
 
   def songs
     Song.all.select do |song|
