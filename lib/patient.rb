@@ -26,5 +26,5 @@ class Patient
 
   end
 
-  
+
 end
