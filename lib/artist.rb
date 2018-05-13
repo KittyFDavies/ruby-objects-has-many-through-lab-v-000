@@ -22,10 +22,7 @@ class Artist
   end
 
   def genres
-    binding.pry
-    songs.select do |song|
-      song.genre
-    end
+    songs.select {|song| song.genre}
   end
 
   def new_song(song, genre)
